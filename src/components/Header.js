@@ -12,7 +12,9 @@ const Header = () => {
             </div>
             <ul className="nav-links">
               <li><a href="#about">About</a></li>
-              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#web">Web</a></li>
+              <li><a href="#mobile">Mobile</a></li>
+              <li><a href="#design">Design</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
