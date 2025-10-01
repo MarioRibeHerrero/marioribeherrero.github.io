@@ -12,22 +12,22 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
-    imgSrc: '/images/figma.svg',
+    imgSrc: '/images/UnityLogo.webp',
     label: 'Unity',
     desc: 'Motor de videojuegos'
   },
   {
-    imgSrc: '/images/figma.svg',
+    imgSrc: '/images/GodotLogo.png',
     label: 'Godot',
     desc: 'Motor de videojuegos'
   },
   {
-    imgSrc: '/images/figma.svg',
+    imgSrc: '/images/FmodLogo.png',
     label: 'Fmod',
     desc: 'Gestor de sonidos'
   },
   {
-    imgSrc: '/images/figma.svg',
+    imgSrc: '/images/RiderLogo.png',
     label: 'Rider',
     desc: 'Gestor de codigo'
   },

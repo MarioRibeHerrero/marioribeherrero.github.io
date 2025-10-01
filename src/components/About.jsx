@@ -7,7 +7,7 @@
 const aboutItems = [
   {
     label: 'Juegos desarrollados',
-    number: 5
+    number: 9
   },
   {
     label: 'Años de experiencia',
@@ -15,7 +15,7 @@ const aboutItems = [
   },
   {
     label: 'Participaciones en Jams',
-    number: 6
+    number: 5
   }
 ];
 

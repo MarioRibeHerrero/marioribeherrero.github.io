@@ -6,40 +6,41 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: '/images/project-1.jpg',
+    imgSrc: '/images/Deriva_Bc.png',
     title: 'Deriva',
-    tags: ['Unity', 'MVC', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/'
+    tags: ['Unity', 'Exploración', 'Aventura'],
+    projectLink: 'https://store.steampowered.com/app/3761930/Deriva/'
   },
   {
-    imgSrc: '/images/project-2.jpg',
-    title: 'Free stock photo app',
-    tags: ['API', 'SPA'],
-    projectLink: 'https://pixstock-official.vercel.app/'
+    imgSrc: '/images/FateBack.png',
+    title: 'Fate: The Curse Of Belzegor',
+    tags: ['Unity', 'Acción', 'Plataformas 3D'],
+    projectLink: 'https://marioribe.itch.io/fate-the-curse-of-belzegor'
   },
   {
-    imgSrc: '/images/project-3.jpg',
-    title: 'Recipe app',
-    tags: ['Development', 'API'],
-    projectLink: ''
+    imgSrc: '/images/Wong_Img.png',
+    title: 'Wong',
+    tags: ['Unity', 'Plataformas 2D', 'GameJam'],
+    projectLink: 'https://marioribe.itch.io/wong'
   },
   {
-    imgSrc: '/images/project-4.jpg',
-    title: 'Real state website',
-    tags: ['Web-design', 'Development'],
-    projectLink: 'https://github.com/codewithsadee-org/wealthome'
+    imgSrc: '/images/BubbleCounty.png',
+    title: 'Bubble County',
+    tags: ['Unity', 'GameJam'],
+    projectLink: 'https://marioribe.itch.io/bubble-county'
+  },
+
+  {
+    imgSrc: '/images/AyaanImg.png',
+    title: 'Ayaan',
+    tags: ['Unity', 'Plataformas 2D'],
+    projectLink: 'https://marioribe.itch.io/ayaan'
   },
   {
-    imgSrc: '/images/project-5.jpg',
-    title: 'eCommerce website',
-    tags: ['eCommerce', 'Development'],
-    projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
-  },
-  {
-    imgSrc: '/images/project-6.jpg',
-    title: 'vCard Personal portfolio',
-    tags: ['Web-design', 'Development'],
-    projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+    imgSrc: '/images/MeLaPelaImg.png',
+    title: 'Me La Pela',
+    tags: ['Unity', 'GameJam', 'Peleas', '1 v 1'],
+    projectLink: 'https://marioribe.itch.io/melapela'
   },
 ];
 
