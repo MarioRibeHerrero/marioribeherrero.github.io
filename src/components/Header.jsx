@@ -23,10 +23,11 @@ const Header = () => {
             className="logo"
           >
             <img
-              src="/images/logo.svg"
-              width={40}
-              height={40}
-              alt="Henry Clark"
+                src="/images/MarioImgCalvo.png"
+                width={40}
+                height={40}
+                alt="Mario Ribe"
+                className="rounded-full"
             />
           </a>
         </h1>

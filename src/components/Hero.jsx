@@ -16,10 +16,10 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
               <img
-                src="/images/avatar-1.jpg"
+                src="/images/MarioImgCalvo.png"
                 width={40}
                 height={40}
-                alt="Henry clark portrait"
+                alt="Portrait"
                 className="img-cover"
               />
             </figure>
@@ -38,9 +38,18 @@ const Hero = () => {
 
           <div className="flex items-center gap-3 mt-4">
             <ButtonPrimary
-              label="Descargar CV"
-              icon="download"
+                label="Descargar CV"
+                icon="download"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const link = document.createElement('a');
+                  link.href = '/MarioRibeHerreroCv.pdf';
+                  link.download = 'CvMarioRibeHerrero.pdf';
+                  link.click();
+                }}
             />
+
+
 
             <ButtonOutline
               href="#about"
@@ -53,7 +62,7 @@ const Hero = () => {
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
             <img
-              src="/images/hero-banner.png"
+              src="/images/"
               width={656}
               height={800}
               alt="Henry Clark"

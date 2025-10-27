@@ -21,40 +21,45 @@ const Navbar = ({ navOpen }) => {
   window.addEventListener('resize', initActiveBox);
 
   const activeCurrentLink = (event) => {
-    lastActiveLink.current?.classList.remove('active');
-    event.target.classList.add('active');
-    lastActiveLink.current = event.target;
+    event.preventDefault(); // evita interferencias
+    const _target = event.target;
+    const _href = _target.getAttribute('href');
 
-    activeBox.current.style.top = event.target.offsetTop + 'px';
-    activeBox.current.style.left = event.target.offsetLeft + 'px';
-    activeBox.current.style.width = event.target.offsetWidth + 'px';
-    activeBox.current.style.height = event.target.offsetHeight + 'px';
-  }
+    lastActiveLink.current?.classList.remove('active');
+    _target.classList.add('active');
+    lastActiveLink.current = _target;
+
+    activeBox.current.style.top = _target.offsetTop + 'px';
+    activeBox.current.style.left = _target.offsetLeft + 'px';
+    activeBox.current.style.width = _target.offsetWidth + 'px';
+    activeBox.current.style.height = _target.offsetHeight + 'px';
+
+    // dejar que se actualice y luego navegar
+    setTimeout(() => {
+      document.querySelector(_href)?.scrollIntoView({ behavior: 'smooth' });
+    }, 0);
+  };
+
 
   const navItems = [
     {
-      label: 'Home',
+      label: 'Inicio',
       link: '#home',
       className: 'nav-link active',
       ref: lastActiveLink
     },
     {
-      label: 'About',
+      label: 'Sobre mi',
       link: '#about',
       className: 'nav-link'
     },
     {
-      label: 'Work',
+      label: 'Mis proyectos',
       link: '#work',
       className: 'nav-link'
     },
     {
-      label: 'Reviews',
-      link: '#reviews',
-      className: 'nav-link'
-    },
-    {
-      label: 'Contact',
+      label: 'Contacto',
       link: '#contact',
       className: 'nav-link'
     }
