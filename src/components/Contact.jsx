@@ -33,7 +33,7 @@ const Contact = () => {
     e.preventDefault();
     const _subject = e.target.name.value;
     const _body = e.target.message.value;
-    const _mailto = `mailto:tuemail@dominio.com?subject=${encodeURIComponent(_subject)}&body=${encodeURIComponent(_body)}`;
+    const _mailto = `mailto:mario.ribee@gmail.com?subject=${encodeURIComponent(_subject)}&body=${encodeURIComponent(_body)}`;
     window.location.href = _mailto;
   };
 
