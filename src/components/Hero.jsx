@@ -44,7 +44,7 @@ const Hero = () => {
             Transformando ideas locas en experiencias de juego únicas
           </h2>
 
-          <div className="flex items-center gap-3 mt-4">
+          <div className="flex items-center gap-3 mt-4" >
             <ButtonPrimary
                 onClick={handleDownload}
                 label="Download CV"
