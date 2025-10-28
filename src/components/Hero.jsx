@@ -4,7 +4,15 @@
 import { ButtonPrimary, ButtonOutline } from "./Button";
 
 
+
 const Hero = () => {
+  const handleDownload = () => {
+    const pdfUrl = "../../public/MarioRibeHerreroCV.pdf";
+    window.open(pdfUrl);
+  };
+
+
+
   return (
     <section
       id="home"
@@ -38,16 +46,13 @@ const Hero = () => {
 
           <div className="flex items-center gap-3 mt-4">
             <ButtonPrimary
-                label="Descargar CV"
+                onClick={handleDownload}
+                label="Download CV"
                 icon="download"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const link = document.createElement('a');
-                  link.href = '/MarioRibeHerreroCv.pdf';
-                  link.download = 'CvMarioRibeHerrero.pdf';
-                  link.click();
-                }}
+                classes="gap-x-2"
             />
+
+
 
 
 
