@@ -7,7 +7,7 @@ import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const Hero = () => {
   const handleDownload = () => {
-    const pdfUrl = "../../public/MarioRibeHerreroCV.pdf";
+    const pdfUrl = '/MarioRibeHerreroCv.pdf';
     window.open(pdfUrl);
   };
 

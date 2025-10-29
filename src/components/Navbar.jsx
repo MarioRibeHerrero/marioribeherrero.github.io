@@ -18,6 +18,43 @@ const Navbar = ({ navOpen }) => {
   }
 
   useEffect(initActiveBox, []);
+  useEffect(() => {
+    const _sections = navItems.map(item => ({
+      ...item,
+      element: document.querySelector(item.link)
+    }));
+
+    const handleScroll = () => {
+      const _scrollY = window.scrollY;
+      let _current = _sections[0];
+
+      for (const _section of _sections) {
+        if (_section.element.offsetTop <= _scrollY + window.innerHeight / 2) {
+          _current = _section;
+        } else {
+          break;
+        }
+      }
+
+      if (lastActiveLink.current?.getAttribute('href') !== _current.link) {
+        lastActiveLink.current?.classList.remove('active');
+        const _newActive = document.querySelector(`a[href="${_current.link}"]`);
+        _newActive?.classList.add('active');
+        lastActiveLink.current = _newActive;
+
+        if (activeBox.current && _newActive) {
+          activeBox.current.style.top = _newActive.offsetTop + 'px';
+          activeBox.current.style.left = _newActive.offsetLeft + 'px';
+          activeBox.current.style.width = _newActive.offsetWidth + 'px';
+          activeBox.current.style.height = _newActive.offsetHeight + 'px';
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   window.addEventListener('resize', initActiveBox);
 
   const activeCurrentLink = (event) => {
