@@ -12,16 +12,16 @@ const works = [
     projectLink: 'https://store.steampowered.com/app/3761930/Deriva/'
   },
   {
-    imgSrc: '/images/FateBack.png',
-    title: 'Fate: The Curse Of Belzegor',
-    tags: ['Unity', 'Acción', 'Plataformas 3D'],
-    projectLink: 'https://marioribe.itch.io/fate-the-curse-of-belzegor'
-  },
-  {
     imgSrc: '/images/Wong_Img.png',
     title: 'Wong',
     tags: ['Unity', 'Plataformas 2D', 'GameJam'],
     projectLink: 'https://marioribe.itch.io/wong'
+  },
+  {
+    imgSrc: '/images/FateBack.png',
+    title: 'Fate: The Curse Of Belzegor',
+    tags: ['Unity', 'Acción', 'Plataformas 3D'],
+    projectLink: 'https://marioribe.itch.io/fate-the-curse-of-belzegor'
   },
   {
     imgSrc: '/images/BubbleCounty.png',
